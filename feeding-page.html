@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeding Guide - The Pet Place</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fff8f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #5c3d2e;
+            margin-bottom: 30px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background-color: #ff8c94;
+            color: white;
+            border: none;
+            padding: 14px 24px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #e57373;
+            transform: scale(1.05);
+        }
+
+        .info-box {
+            max-width: 700px;
+            width: 100%;
+            background-color: #fff;
+            border: 2px solid #ffdcdc;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            display: none;
+            text-align: left;
+        }
+
+        .info-box p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .back-home {
+            background-color: #d48a8a;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .back-home:hover {
+            background-color: #c67171;
+        }
+
+        /* Prevent content shift */
+        .info-placeholder {
+            min-height: 240px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feeding Guide</h1>
+
+    <div class="button-container">
+        <button onclick="showInfo('puppy')">Puppy</button>
+        <button onclick="showInfo('adultDog')">Adult Dog</button>
+        <button onclick="showInfo('kitten')">Kitten</button>
+        <button onclick="showInfo('adultCat')">Adult Cat</button>
+        <button onclick="showInfo('otherSpecies')">Other Species</button>
+    </div>
+
+    <div class="info-placeholder">
+        <div id="puppy" class="info-box">
+            <p><strong>Feeding a Puppy:</strong></p>
+            <p>Puppies require more nutrients for growth. Feed puppies 3-4 times per day, with food designed specifically for their age and size.</p>
+            <p>• Type: Puppy-specific dry or wet food. Avoid adult food too early.</p>
+            <p>• 0–20 lbs: Feed 3–4 times daily, ½–1 cup per meal.</p>
+            <p>• 21–40 lbs: Feed 3 times daily, ~1–1.5 cups per meal.</p>
+            <p>• Wet food, dry food, milk, Supplements: Only as advised by a vet.</p>
+        </div>
+
+        <div id="adultDog" class="info-box">
+            <p><strong>Feeding an Adult Dog:</strong></p>
+            <p>Adult dogs need around 18–25 calories per pound of body weight per day. Feed your dog twice a day with balanced meals, ensuring the food is high in protein, fiber, and fat for energy.</p>
+            <p>• Type: High-quality dry or wet food. Add raw/cooked meat occasionally.</p>
+            <p>• 0–20 lbs: ½–1.5 cups daily.</p>
+            <p>• 21–40 lbs: 1.5–2.5 cups daily.</p>
+            <p>• 41+ lbs: 2.5–4 cups daily.</p>
+            <p>• Dry food, wet food, Supplements: Joint and coat support optional.</p>
+        </div>
+
+        <div id="kitten" class="info-box">
+            <p><strong>Feeding a Kitten:</strong></p>
+            <p>Kittens need a higher calorie intake to support growth. Feed them 3-4 times per day with kitten food that is rich in protein and fat.</p>
+            <p>• Type: Kitten-specific wet food or formula for younger kittens.</p>
+            <p>• 0–5 lbs: Feed 3–4 times/day, ~¼–½ can per meal.</p>
+            <p>• 6–10 lbs: 2–3 times/day, ~½ can per meal.</p>
+            <p>• Dry food, wet food, milk (specific for kittens) Supplements: Vitamin paste, taurine-rich food if needed.</p>
+        </div>
+
+        <div id="adultCat" class="info-box">
+            <p><strong>Feeding an Adult Cat:</strong></p>
+            <p>Adult cats need about 20 calories per pound per day. Feed adult cats twice a day with high-protein, low-carb meals to maintain muscle and energy.</p>
+            <p>• Type: High-quality wet food (preferred) or dry with water access.</p>
+            <p>• 0–10 lbs: ½–1 can twice daily or ~¼–½ cup dry food.</p>
+            <p>• 11–15 lbs: Up to 1.5 cans or ½–¾ cup dry food daily.</p>
+            <p>• Dry food, wet food, Supplements: Hairball remedies, skin/coat support if needed.</p>
+        </div>
+
+        <div id="otherSpecies" class="info-box">
+            <p><strong>Feeding Other Pets:</strong></p>
+            <p>Coming Soon!</p>
+        </div>
+    </div>
+
+    <a href="file:///C:/Users/robyn/OneDrive/Desktop/Senior%20Design%20Project/pet-care-website.html" class="back-home">← Back to Home</a>
+
+    <script>
+        function showInfo(id) {
+            const boxes = document.querySelectorAll('.info-box');
+            boxes.forEach(box => {
+                box.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+

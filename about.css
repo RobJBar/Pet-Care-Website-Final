@@ -1,0 +1,17 @@
+.icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 40px auto; /* Places it below the image */
+    background-image: url('pets.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: aquamarine;
+    cursor: pointer; /* Makes it clear it's clickable */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Add a hover effect */
+.icon:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}

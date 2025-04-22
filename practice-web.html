@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header"></header>
+
+    <button>About Us</button>
+    <h1>Pet Care</h1>
+
+    <!-- Separator line -->
+    <div class="separator"></div>
+
+    <!-- Large hero image (background) -->
+    <div class="hero-image"></div>
+
+    <!-- Icon at the bottom -->
+    <a href="your-link.html" class="icon"></a>
+    <p class="icon-text">Find Your Pet</p>
+</body>
+
+<style>
+    /* Header Styling */
+    .header {
+        width: 100%;
+        height: 80px; /* Adjust as needed */
+        background-color: rosybrown;
+    }
+
+    /* Hero Image - Takes up half the page */
+    .hero-image {
+        width: 100%;
+        height: 70vh;  /* 50% of the viewport height */
+        background-image: url('house-pets.png');
+        background-size: cover;
+        background-position: top;
+        background-color: pink;
+        margin-top: 10px;
+    }
+
+    /* Separator Line */
+    .separator {
+        display: block;
+        width: 80%;
+        height: 20px;
+        background-color: black;
+        margin: 10px auto;
+    }
+
+    /* White Space Below Image */
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh; /* Ensures enough space for icons */
+    }
+
+    /* Clickable Icon */
+    .icon {
+        display: block;
+        width: 120px;
+        height: 120px;
+        background-image: url('pets.jpg');
+        background-size: cover;
+        background-position: center;
+        background-color: aquamarine;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+        margin-bottom: 40px; /* Ensures it's in the white space */
+        
+    }
+
+    .icon:hover {
+        transform: scale(1.1); /* Hover effect */
+    }
+</style>
+</html>
