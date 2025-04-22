@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c2dbe8;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.buttonPage {
+    background-color: #ff8c94;
+    color: white;
+    border-color: #ffaaa5;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.buttonPage:hover {
+    background-color: #cf757b;
+    border-color: #c88481;
+    transform: scale(1.05);
+}
+
+.buttonMain{
+    position: absolute;
+    left: 20px;
+    top: -10px;
+}
+
+.buttonSwitch{
+    position: absolute;
+    right: 20px;
+    top: -10px;
+}
+
+.buttonAnimal{
+    border: none;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.buttonCat{
+    background-image:url(catbutton.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.buttonDog{
+    background-image:url(dogbutton.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    height: 55px;
+    background-color: #de8f94;
+    border-bottom: 3px solid #d48a8a;
+}
+
+.separator {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff8c94, #ffaaa5);
+    border-radius: 2px;
+    margin: 20px auto;
+}
+
+header{
+    text-align: center;
+    font-size: 40px;
+    background-color: #c2dbe8;
+    color: black;
+}
+
+nav{
+    float: left;
+    width: 30%;
+    background: #c2dbe8;
+    padding: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+article{
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #b1d1d4;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 700px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.infoback{
+    background-color: #e0f7f7;
+    border-radius: 5px;
+}
+
+.button1 {
+    box-sizing: border-box;
+    border: none;
+    background-color: #dae6ec;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.button1:hover {
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+}
+
+.button1:active {
+    transform: scale(1.0);
+    transition-duration: 0s;
+}
+
+.button1 > * {
+    vertical-align: middle;
+}
+
+.buttonFYP {
+    border-radius: 25px;
+}
+
+.buttonsContainer {
+    position: absolute;
+    left: 20px;
+    top: 40%;
+    transform: translateY(-15%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.FYP_Img img{
+    max-width: 50%;
+    border-radius: 5%;
+}

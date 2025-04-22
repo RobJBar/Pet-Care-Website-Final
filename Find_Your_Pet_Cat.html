@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find Your Pet</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Styles_FYP.css">
+        <script src="button_function.js"></script>
+        <script src="cat_button_info.js"></script>
+    </head>
+        <body>
+            <header class="header"></header>
+            <section>
+                <header>
+                    <h1>Find Your Cat</h1>
+
+                    <button type="button"
+                    onclick="Return_Main()"
+                    class="buttonPage buttonMain">
+                    Main Page
+                    </button>
+
+                    <button type="button"
+                    onclick="Dog_Page()"
+                    class="buttonPage buttonSwitch">
+                    Find Your Dog</button>
+                </header>
+                
+                <div class="separator"></div>
+
+                    <nav>
+                        <ul>
+                            
+                            <p>
+                                <button type="button"
+                                onclick="Siamese_Name(); Siamese()"
+                                class="button1 buttonFYP">
+                                <img src="Siamese.png">
+                                Siamese</button>
+                            </p>
+
+                            <p>
+                                <button type="button"
+                                onclick="Persian_Name(); Persian()"
+                                class="button1 buttonFYP">
+                                <img src="Persian.png">
+                                Persian</button>
+                            </p>
+
+                            <p>
+                                <button type="button"
+                                onclick="Maine_Coon_Name(); Maine_Coon()"
+                                class="button1 buttonFYP">
+                                <img src="Maine_Coon.png">
+                                Maine Coon</button>
+                            </p>
+
+                            <p>
+                                <button type="button"
+                                onclick="Ragdoll_Name(); Ragdoll()"
+                                class="button1 buttonFYP">
+                                <img src="Ragdoll.png">
+                                Ragdoll</button>
+                            </p>
+
+                            <p>
+                                <button type="button"
+                                onclick="Bengal_Name(); Bengal()"
+                                class="button1 buttonFYP">
+                                <img src="Bengal.png">
+                                Bengal</button>
+                            </p>
+
+                            <p>
+                                <button type="button"
+                                onclick="Abyssinian_Name(); Abyssinian()"
+                                class="button1 buttonFYP">
+                                <img src="Abyssinian.png">
+                                Abyssinian</button>
+                            </p>
+
+                            <p>
+                                <button type="button"
+                                onclick="Birman_Name(); Birman()"
+                                class="button1 buttonFYP">
+                                <img src="Birman.png">
+                                Birman</button>
+                            </p>
+
+                            <p>
+                                <button type="button"
+                                onclick="Oriental_Shorthair_Name(); Oriental_Shorthair()"
+                                class="button1 buttonFYP">
+                                <img src="Oriental_Shorthair.png">
+                                Oriental Shorthair</button>
+                            </p>
+
+                            <p>
+                                <button type="button"
+                                onclick="Sphynx_Name(); Sphynx()"
+                                class="button1 buttonFYP">
+                                <img src="Sphynx.png">
+                                Sphynx</button>
+                            </p>
+
+                            <p>
+                                <button type="button"
+                                onclick="Devon_Rex_Name(); Devon_Rex()"
+                                class="button1 buttonFYP">
+                                <img src="Devon_Rex.png">
+                                Devon Rex</button>
+                            </p>
+                        </ul>
+                    </nav>
+
+                <article class="infoback">
+                    <h1 id="Cat_Name">Cat</h1>
+                    <p id="Cat" class="FYP_Img"></p>
+                </article>
+            </section>
+        </body>
+</html>
