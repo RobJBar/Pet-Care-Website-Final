@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Find Your Pet</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Styles_FYP.css">
-        <script src="button_function.js"></script>
-    </head>
+<head>
+    <title>Find Your Pet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Styles_FYP.css">
+    <script src="button_function.js"></script>
+</head>
 
-    <body>
-        <header class="header"></header>
-        <section>
-            <header>
-                <h1>Find Your Pet</h1>
-                <button type="button"
-                    onclick="Return_Main()"
-                    class="buttonPage buttonMain">
-                    Main Page
-                </button>
-            </header>
-            <div class="separator">
+<body>
+    <header class="header"></header>
+
+    <section>
+        <header>
+            <h1>Find Your Pet</h1>
+            <button type="button" onclick="Return_Main()" class="buttonPage buttonMain">
+                Main Page
+            </button>
+        </header>
+
+        <div class="separator">
             <div class="mainContainer">
-            <div class="buttonsContainer">
-            <button type="button"
-            onclick="Dog_Page()"
-            class="buttonAnimal buttonDog button1">
-            Find Your Dog
-            </button>
+                <div class="buttonsContainer">
+                    <button type="button" onclick="Dog_Page()" class="buttonAnimal buttonDog button1">
+                        Find Your Dog
+                    </button>
 
-            <button type="button"
-            onclick="Cat_Page()"
-            class="buttonAnimal buttonCat button1">
-            Find Your Cat
-            </button>
-            </div>
-            </div>
-            </section>
-    </body>
+                    <button type="button" onclick="Cat_Page()" class="buttonAnimal buttonCat button1">
+                        Find Your Cat
+                    </button>
+                </div> <!-- close buttonsContainer -->
+            </div> <!-- close mainContainer -->
+        </div> <!-- close separator -->
+    </section>
+</body>
 </html>
